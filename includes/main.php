@@ -2,6 +2,11 @@
 
 defined( 'ABSPATH' ) or die;
 
+add_action( 'wp_enqueue_scripts', 'ln_add_scripts' );
+function ln_add_scripts() {
+    wp_enqueue_style( 'latest-news', plugins_url( 'public/css/styles.css', dirname( __FILE__ ) ), '', '0.1' );
+}
+
 add_action( 'init', 'ln_add_shortcodes' );
 function ln_add_shortcodes() {
     add_shortcode('latest-news', 'ln_generate_shortcode');
