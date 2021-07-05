@@ -9,7 +9,7 @@ function ln_add_scripts() {
 
 add_action( 'init', 'ln_add_shortcodes' );
 function ln_add_shortcodes() {
-    add_shortcode('latest-news', 'ln_generate_shortcode');
+    add_shortcode( 'latest-news', 'ln_generate_shortcode' );
 }
 
 function ln_generate_shortcode( $atts = [], $content = null) {
@@ -23,7 +23,7 @@ function ln_generate_shortcode( $atts = [], $content = null) {
     while ( $loop->have_posts() ) {
         $loop->the_post();
         $o .=   '<div class="ln-section">';
-        $o .=       '<a class="ln-link" href="' . '#' . '" target="_blank" rel="noopener noreferrer"><span></span></a>';
+        $o .=       '<a class="ln-link" href="' . get_post_custom()['url'][0] . '" target="_blank" rel="noopener noreferrer"><span></span></a>';
         $o .=       '<div class="ln-content">';
         $o .=           '<div class="ln-layer">';
         $o .=               '<span class="ln-title">' . get_the_title() . '</span>';
