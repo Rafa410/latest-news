@@ -1,0 +1,52 @@
+# Copyright (C) 2021 Rafa Soler
+# This file is distributed under the GPLv3.
+msgid ""
+msgstr ""
+"Project-Id-Version: Latests news 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/latest-news\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-07-06T18:24:34+02:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.5.0\n"
+"X-Domain: latest-news\n"
+
+#. Plugin Name of the plugin
+msgid "Latests news"
+msgstr "Últimas noticias"
+
+#. Plugin URI of the plugin
+msgid "https://github.com/Rafa410/latest-news"
+msgstr ""
+
+#. Description of the plugin
+msgid "Displays the latest news with an external link to read more"
+msgstr "Muestra las últimas noticias con un enlace externo para leer más"
+
+#. Author of the plugin
+msgid "Rafa Soler"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://github.com/Rafa410"
+msgstr ""
+
+#: admin/latest-news-admin.php:9
+msgid "News"
+msgstr "Noticias"
+
+#: admin/latest-news-admin.php:23
+msgid "Read more URL"
+msgstr "Leer más URL"
+
+#: admin/latest-news-admin.php:31
+msgid "URL"
+msgstr "URL"
+
+#: includes/main.php:32
+msgid "Read more"
+msgstr "Leer más"
