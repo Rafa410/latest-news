@@ -4,13 +4,14 @@
  * Plugin Name:       Latests news
  * Plugin URI:        https://github.com/Rafa410/latest-news
  * Description:       Displays the latest news with an external link to read more
- * Version:           0.1
+ * Version:           1.0
  * Requires at least: 5.0
  * Requires PHP:      7.0
  * Author:            Rafa Soler
  * Author URI:        https://github.com/Rafa410
  * License:           GPLv3
  * License URI:       https://www.gnu.org/licenses/gpl-3.0.html
+ * Text Domain:       latest-news
  * Domain Path:       /languages
  */
 

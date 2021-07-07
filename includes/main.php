@@ -29,7 +29,7 @@ function ln_generate_shortcode( $atts = [], $content = null) {
         $o .=           '<div class="ln-layer">';
         $o .=               '<span class="ln-title">' . get_the_title() . '</span>';
         $o .=               '<span class="ln-description">' . get_the_content() . '</span>';
-        $o .=               '<span class="ln-button">' . __( 'Leer más' ) . '</span>';
+        $o .=               '<span class="ln-button">' . __( 'Read more', 'latest-news' ) . '</span>';
         $o .=           '</div>';
         $o .=       '</div>';
         $o .=       '<div class="ln-background">' . get_the_post_thumbnail() . '</div>';

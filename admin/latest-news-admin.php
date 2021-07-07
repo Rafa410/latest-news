@@ -20,7 +20,7 @@ add_action( 'admin_init', 'ln_admin_init' );
 add_action('save_post', 'ln_update_url');
 
 function ln_admin_init() {
-  add_meta_box( 'external_link_meta', __( 'Read more URL' ), 'ln_external_link', 'news', 'side' );
+  add_meta_box( 'external_link_meta', __( 'Read more URL', 'latest-news' ), 'ln_external_link', 'news', 'side' );
 }
  
 function ln_external_link() {
@@ -28,7 +28,7 @@ function ln_external_link() {
   $news = get_post_custom( $post->ID );
   $url = $news['url'][0];
   ?>
-  <label for="url"><?= __( 'URL' ) ?>:</label>
+  <label for="url"><?= __( 'URL', 'latest-news' ) ?>:</label>
   <input id="url" name="url" type="url" value="<?= $url ?>">
   <?php
 }
