@@ -19,6 +19,11 @@ defined( 'ABSPATH' ) or die;
 
 define( 'LATEST_NEWS_DIR', plugin_dir_path( __FILE__ ) );
 
+add_action( 'init', 'wpdocs_load_textdomain' );
+function wpdocs_load_textdomain() {
+  load_plugin_textdomain( 'latest-news', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' ); 
+}
+
 if ( is_admin() ) {
     require_once LATEST_NEWS_DIR . 'admin/latest-news-admin.php';
 } else {
