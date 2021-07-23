@@ -4,8 +4,8 @@ defined( 'ABSPATH' ) or die;
 
 add_action( 'wp_enqueue_scripts', 'ln_add_scripts' );
 function ln_add_scripts() {
-    wp_enqueue_script( 'latest-news-script', plugins_url( 'public/js/scripts.js', __DIR__ ), '', '0.1', true );
-    wp_enqueue_style( 'latest-news-style', plugins_url( 'public/css/styles.css', __DIR__ ), '', '0.1' );
+    wp_enqueue_script( 'latest-news-script', plugins_url( 'public/js/ln-scripts.js', __DIR__ ), '', '0.1', true );
+    wp_enqueue_style( 'latest-news-style', plugins_url( 'public/css/ln-styles.css', __DIR__ ), '', '0.1' );
 }
 
 add_action( 'init', 'ln_add_shortcodes' );
